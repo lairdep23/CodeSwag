@@ -41,7 +41,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="IAP-JR-EIF">
-                                                    <rect key="frame" x="0.0" y="4" width="375" height="111.5"/>
+                                                    <rect key="frame" x="0.0" y="4" width="375" height="112"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoodies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKu-BL-7ko">
                                                     <rect key="frame" x="140.5" y="43.5" width="93" height="33"/>
@@ -83,17 +83,17 @@
                     <navigationItem key="navigationItem" title="CodeSwag" id="94Y-8W-RSZ"/>
                     <connections>
                         <outlet property="categoryTable" destination="Ma1-N0-Q3X" id="ot8-EZ-CRu"/>
-                        <segue destination="Vmf-R0-BRi" kind="show" id="Ynw-nW-jj8"/>
+                        <segue destination="Vmf-R0-BRi" kind="show" identifier="ToProductsVC" id="Ynw-nW-jj8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="QJH-Sp-Ef2">
             <objects>
-                <viewController id="Vmf-R0-BRi" sceneMemberID="viewController">
+                <viewController id="Vmf-R0-BRi" customClass="ProductsVC" customModule="CodeSwag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="QwP-6G-0RG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +183,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="whg-1d-1I8"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="PEk-mj-aT5" id="ncr-c5-54x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="du2-mm-eG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
